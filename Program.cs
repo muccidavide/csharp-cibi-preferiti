@@ -1,21 +1,25 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-string[] cibiPreferiti = { "pizza", "pasta", "lasagna", "cioccolato", "gelato", "hamburger", "carne"};
+string[] cibiPreferiti = { "pizza", "pasta", "lasagna", "cioccolato", "gelato", "hamburger"};
 
+// lunghezza classifica
 Console.WriteLine(cibiPreferiti.Length);
 
+// classifica
 for (int i = 0; i < cibiPreferiti.Length; i++)
 {
-    Console.WriteLine(cibiPreferiti[i]);
+    Console.WriteLine(i + " " + cibiPreferiti[i]);
 }
 
-Console.WriteLine(cibiPreferiti[0]);
+// Cibo Top
+Console.WriteLine("Top: " + cibiPreferiti[0]);
 
+// Cibo notTop
 int posizioneUltimoCibo = cibiPreferiti.Length - 1;
-Console.WriteLine(cibiPreferiti[posizioneUltimoCibo]);
+Console.WriteLine("Last: " + cibiPreferiti[posizioneUltimoCibo]);
 
+// BONUS: mediana
 double mediana = cibiPreferiti.Length % 2;
-Console.WriteLine(mediana);
 
 
 if(mediana == 0)
